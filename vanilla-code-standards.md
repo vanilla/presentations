@@ -3,7 +3,7 @@ slidenumbers: true
 
 # [fit] Vanilla Coding Standards
 
-### [fit] Some things you need to know about writing code at Vanilla Forums
+### [fit] Things you should know about writing for Vanilla
 
 ---
 
