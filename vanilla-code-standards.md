@@ -260,4 +260,4 @@ $foo = 'bar'; // eol note
 
 # [fit] Fin
 
-### ...and questions
+[https://github.com/vanilla/presentations/blob/master/vanilla-code-standards.md](https://github.com/vanilla/presentations/blob/master/vanilla-code-standards.md)
