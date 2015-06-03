@@ -37,6 +37,8 @@ slidenumbers: true
   ```php
   echo "It's ".date('r')." today.\n"
   ```
+  
+* You don't have to scrunch lines to 120 characters.
 
 ---
 
