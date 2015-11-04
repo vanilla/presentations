@@ -21,6 +21,7 @@
 * Cheers & Jeers
 * Help topics
 * Developer help
+* Us sharing info
 
 ---
 
