@@ -2,6 +2,18 @@
 
 ---
 
+# Overview
+
+**What do I need to know?**
+
+  * What are the docs made with
+  * Tools I need
+  * File formats I need to know
+  * Actually making changes on Git Hub
+
+
+---
+
 # What's a Static Site Generator?
 
 * A tool for making websites (i.e. It's a style of CMS)
