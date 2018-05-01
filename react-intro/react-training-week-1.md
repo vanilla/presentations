@@ -81,7 +81,6 @@ ___
 
 ___
 
-
 # Second __*Counter*__
 
 *https://codepen.io/slafleche/pen/aGJrdJ*
