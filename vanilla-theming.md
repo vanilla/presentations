@@ -6,7 +6,7 @@
 * symlink theme and possibly plugin
   * Clear your cache
 
-##Baisic Theme Setup
+## Baisic Theme Setup
 
 *Bittersweet's a good example*
 
@@ -27,7 +27,7 @@
 * Layout Page
 * Branding Page
 
-##Advanced Theme Setup
+## Advanced Theme Setup
 
 * Build Scripts
   * Vanilla CLI's your friend: https://github.com/vanilla/vanilla-cli
