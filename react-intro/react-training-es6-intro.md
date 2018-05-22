@@ -102,7 +102,7 @@ ___
 
 Built in templating style strings! Just use back ticks "__*\`*__".
 
-Insert varaibles with *`${vaName}`*.
+Insert expressions (variables, functions, arrays, etc) with *`${yourExpression}`*.
 
 Examples: 
 https://codepen.io/slafleche/pen/OZBZPJ
@@ -110,7 +110,7 @@ ___
 
 ## [fit] Default params
 
-Default params are finaly supported:
+Default params are finally supported:
 
 ```
 function sayMsg(msg='This is a default message.') {
@@ -125,7 +125,7 @@ ___
 
 ## [fit] Proper __*Classes*__!
 
-We finaly have "proper" classes in ES6. 
+We finally have "proper" classes in ES6. 
 
 The __*constructor*__ is the initialization method for the object. When you inherit from another class and you want to call their constructor, you call __*super*__ in your constructor method.
 
