@@ -65,7 +65,7 @@ Replaces __*anonymous functions*__
 
 Examples:
 
-https://codepen.io/slafleche/pen/YLJZgy
+https://codepen.io/slafleche/pen/YLLadq
 
 ___
 
