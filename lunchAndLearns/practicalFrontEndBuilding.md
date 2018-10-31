@@ -59,7 +59,7 @@ If you don't know what you can do, look at the `package.json` file!
 #### Manually run:
 ```
 yarn install
-yarn run build
+yarn build
 ```
 
 --- 
@@ -79,5 +79,5 @@ $Configuration['HotReload']['Enabled'] = true;
 
 #### in your terminal
 ```
-yarn run build:dev
+yarn build:dev
 ```
