@@ -41,6 +41,42 @@ sudo rm -r node_modules
 brew install yarn --without-node
 composer install
 ```
+
+---
+
+#### Manually run:
+```
+yarn install
+yarn build
+```
+---
+
+###Manually run install and manually run build
+
+If you don't know what you can do, look at the `package.json` file!
+
+---
+
+### "Hot" reloading
+
+Have your files compiles dyamically as you change them! Note that you might need to stop and rerun the hot realod when you have new files.
+
+---
+
+#### PHP config:
+```php
+$Configuration['HotReload']['Enabled'] = true;
+$Configuration['Debug'] = true;
+```
+---
+
+#### Terminal:
+```
+yarn build:dev 
+
+# Or
+yarn build:dev --fix
+```
 ---
 
 ## Writing some JS
@@ -60,34 +96,5 @@ vanilla/plugins/stubcontent/src/scripts/entries/forum.ts
 ```
 ---
 
-###Stretch Goal: manually run install and manually run build
 
-If you don't know what you can do, look at the `package.json` file!
 
----
-
-#### Manually run:
-```
-yarn install
-yarn build
-```
-
----
-
-###Stretch Goal: "hot" reloading
-
-Have your files compiles dyamically as you change them! Note that you might need to stop and rerun the hot realod when you have new files.
-
----
-
-#### PHP config:
-```php
-$Configuration['HotReload']['Enabled'] = true;
-```
-
----
-
-#### in your terminal
-```
-yarn build:dev
-```
