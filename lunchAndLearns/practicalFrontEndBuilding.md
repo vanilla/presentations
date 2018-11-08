@@ -48,6 +48,8 @@ composer install
 ```
 yarn install
 yarn build
+yarn check-types
+
 ```
 ---
 
@@ -75,6 +77,7 @@ $Configuration['Debug'] = true;
 yarn build:dev 
 
 # Or
+
 yarn build:dev --fix
 ```
 ---
@@ -94,7 +97,5 @@ yarn build:dev --fix
 vanilla/plugins/stubcontent/src/scripts/entries/admin.ts
 vanilla/plugins/stubcontent/src/scripts/entries/forum.ts
 ```
----
-
 
 
