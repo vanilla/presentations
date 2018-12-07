@@ -78,7 +78,7 @@ SVG is an image format. Here's an example: the FireFox logo.
 ---
 
 
-Let's take our the noise and break it down.
+Let's take out the noise and break it down.
 
 ```XML
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
