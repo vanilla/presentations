@@ -3,7 +3,7 @@
 
 --------------
 
-##What do you mean?
+##What do you mean by "side effects"?
 
 I mean trying to fix one thing and breaking another.
 
@@ -13,7 +13,7 @@ I mean trying to fix one thing and breaking another.
 
 # Part 1: Theory
 
-There are many, very similar methodologies/frameworks for writing good modular CSS. [*SMACCS*](https://smacss.com/), [*Atomic Design*](http://atomicdesign.bradfrost.com/chapter-2/), [*SUIT CSS*](https://suitcss.github.io/) and [*BEM*](http://getbem.com/introduction/) are some of the most popular.
+There are many, methodologies/frameworks for writing good modular CSS. [*SMACSS*](https://smacss.com/), [*Atomic Design*](http://atomicdesign.bradfrost.com/chapter-2/), [*SUIT CSS*](https://suitcss.github.io/) and [*BEM*](http://getbem.com/introduction/) are some of the most popular.
 
 At Vanilla, we have our own flavour, but they're all pretty similar at their core. This talk won't into all the differences , but focus on the higher level concepts.
 
@@ -115,19 +115,25 @@ Since we're not styling base elements, we can even swap out the HTML elements wi
 ----------------
 
 
-# Managing scope (pt 2)
+# Managing scope (pt 1)
 
 * Your selector should only apply to one region and not "bleed" out
-* Avoid super generic classes that are likely to be used like "header"
-  * Especially in Vanilla, since we have plugins, pockets, and all kinds of client customizations
+* Avoid super generic classes that are likely to be used like "header" when in a project with a lot of legacy code. **Especially in Vanilla, since we have plugins, pockets, and all kinds of client customizations**
 
 ---------
 
 # Managing scope (pt 2)
 
 * Don't style on base elements (except on a reset/normalize type sheet)
-* Make classes!
+* Make classes! Classes are usually your best option rather than IDs or elements
+* Be very unimaginative with your names
+
+------
+
+# Managing scope (pt 3)
+
 * Ideally, your style partial has the same name as the component you've made (example, all our "categoriesNav" styles are in a file called "categoriesNav")
+* If your component is too complex, you should probably break it down to multiple
 
 ------
 
@@ -139,7 +145,7 @@ You can mix and match classes, but be careful it can get messy and difficult to 
 
 ## State
 
-In Vanilla, we use the SMACCS style "is" or "has" prefixes for states. Example: "isActive"). These state classes are meant to not be used alone, but with another class.
+In Vanilla, we use the SMACSS style "is" or "has" prefixes for states. Example: "isActive"). These state classes are meant to not be used alone, but with another class.
 
 ```
 .categoriesNav-item.isActive { ... }
@@ -147,9 +153,13 @@ In Vanilla, we use the SMACCS style "is" or "has" prefixes for states. Example: 
 
 --------
 
-# Global scoped styles
+# Global scoped styles (pt 1)
 
 If you have a really generic global class, like `.button` it's extreamly difficult to be sure modifying won't break anything else. It's also much harder to "undo" styles than to just start fresh. A "flater" stylesheet is much easiser to understand and to maintain. 
+
+--------
+
+# Global scoped styles (pt 2)
 
 Make sure the purpose of those shared class is well defined and clear. If you find yourself writing a exceptions, consider making another class.
 
