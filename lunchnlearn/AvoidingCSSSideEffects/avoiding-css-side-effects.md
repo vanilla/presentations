@@ -11,6 +11,15 @@ I mean trying to fix one thing and breaking another.
 
 ----------
 
+# Or... to put it in a different way
+
+###Two CSS properties walk into a bar.
+### A barstool in a completely different bar falls over.
+
+----
+
+
+
 # Part 1: Theory
 
 There are many, methodologies/frameworks for writing good modular CSS. [*SMACSS*](https://smacss.com/), [*Atomic Design*](http://atomicdesign.bradfrost.com/chapter-2/), [*SUIT CSS*](https://suitcss.github.io/) and [*BEM*](http://getbem.com/introduction/) are some of the most popular.
@@ -216,6 +225,7 @@ It's generally much easier to create a new class than to undo styles from an exi
 ---
 ## Further Reading
 
+* https://css-tricks.com/regarding-css-global-scope/ 
 * https://smacss.com/
 * http://atomicdesign.bradfrost.com/chapter-2/
 * https://suitcss.github.io/
