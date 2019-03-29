@@ -150,9 +150,9 @@ These are for control flow. They will not output any contents.
 
 - [All twig built-ins](https://twig.symfony.com/doc/2.x/)
 - [Our built ins](https://github.com/vanilla/vanilla/blob/master/library/Vanilla/Web/TwigRenderTrait.php)
-  - `t()` - For making URLs
-  - `url()` - For making vanilla URLs
-  - `sanitizeUrl()` for sanitizing possibly dangerous URLs.
+  - `t()` - For translating content. See `Gdn::translate()`
+  - `url()` - For making vanilla URLs. See `url()`.
+  - `sanitizeUrl()` for sanitizing possibly dangerous URLs. See `Gdn_Format::sanitizeUrl()`.
 - Any callables that you explicitly pass in.
 
 ---
