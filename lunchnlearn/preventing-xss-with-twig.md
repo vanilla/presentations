@@ -169,7 +169,7 @@ These are for control flow. They will not output any contents.
 
 - Knowledge Base List
   - [View](https://github.com/vanilla/knowledge/blob/master/plugins/knowledge/views/knowledgesettings/index.twig)
-  - [Data](https://github.com/vanilla/knowledge/blob/9746dbcdbbbfffb47c0525b2600b8fe89d08ca9d/plugins/knowledge/Controllers/KnowledgeSettingsController.php#L184-L238)
+  - [Data](https://github.com/vanilla/knowledge/blob/9746dbcdbbbfffb47c0525b2600b8fe89d08ca9d/plugins/knowledge/Controllers/KnowledgeSettingsController.php#L149-L150)
 - KB add/edit form
   - [View](https://github.com/vanilla/knowledge/blob/master/plugins/knowledge/views/knowledgesettings/addedit.twig)
   - [Data](https://github.com/vanilla/knowledge/blob/master/plugins/knowledge/Controllers/KnowledgeSettingsController.php#L149-L150)
