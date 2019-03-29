@@ -1,0 +1,50 @@
+# CSS in __JS__
+
+![](https://media.giphy.com/media/ijhLl5UuE7yec/giphy.gif)
+
+---
+
+# __Libraries__
+
+There are many libraries that handle CSS in JS. The one we settled on is: 
+
+https://typestyle.github.io/
+
+---
+
+# __Why?__
+
+* Works well with our existing code
+* Simple to use
+* Agnostic on other tech (besides JS)
+
+---
+
+# __What can it do that we can't with SASS?__
+
+* Live updating
+* No need for monolithic builds with all plugins
+* You can reuse the same variables in JS functions
+
+---
+
+__How to use it?__
+
+https://codepen.io/slafleche/pen/WWeGJj?editors=0011
+
+---
+__In future presentations :__
+
+* Standards
+* The patterns we've created
+* Theming System
+
+---
+
+__Resources:__
+https://egghead.io/courses/maintainable-css-using-typestyle
+https://typestyle.github.io/
+
+---
+
+![](https://media.giphy.com/media/3oz8xuflXVQerHqDCM/giphy.gif)
