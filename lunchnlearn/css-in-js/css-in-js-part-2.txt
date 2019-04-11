@@ -1,0 +1,177 @@
+# __*CSS*__ in __*JS*__ part *2*
+
+![](https://giant.gfycat.com/GorgeousSeriousApatosaur.gif)
+
+---
+
+# __*Pattern*__ __s__
+
+![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+
+---
+
+# __*Style*__ Files
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+* File name must be suffixed with __*"Styles.ts"*__
+* May contain one or more function returning __*variables*__
+* Variable functions are suffixed with __*"Variables"*__
+* May container one or more functions returning *classes*
+* Variable functions are suffixed with __*"Classes"*__
+
+---
+
+Usuaully, you want one component style file for some component (__*myComponent.tsx*__, __*myComponentStyles.ts*__)
+
+
+If grouping multiple functions together makes sense (*button types*, *utility functions*), you can do so.
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+# __*Variable*__ __s__
+
+![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+
+---
+
+# __*Globals*__ 
+
+We have a few __*global*__ scoped variables, the most important being __*globalVariables()*__. This function cannot have dependencies on other style functions.
+
+We have some secondary ones like __*formElementsVariables()*__, or __*layoutVariables()*__
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+# __*Example:*__ __Next/Prev__
+
+![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+
+---
+
+![inline](../images/nextPrev.png)
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+`/vanilla/library/src/scripts/navigation/NextPrevious.tsx`
+
+`/vanilla/library/src/scripts/navigation/nextPreviousStyles.tsx`
+
+## __*Unimaginative names for the win!*__
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+## __nextPrevious*Variables*()__
+
+![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+
+---
+
+* `useThemeCache()` -> Always use for faster rendering
+* Load any globals
+* `variableFactory` will namespace your variables
+* Create sub categories and declare your variables
+* Default to globals when applicable
+* Output variables!
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+## __nextPrevious*Classes*()__
+
+* `useThemeCache()` -> Always use for faster rendering
+* Load your variales. You may or may not need global variables
+* create `style` using `styleFactory` -> our style function, not the one from TypeStyles
+* `root` for the component's root class
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+## __nextPrevious*Classes*()__
+
+* variable name matches "subcomponentName"
+* add styles (look up TypeStyle documentation)
+* Output classes
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+## __Helper *Functions*__
+
+![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+
+---
+
+## __TypeStyles helper *Functions*__
+
+TypeStyle has many helper functions. For values with a unit, it's best to output it with a helper function so you can do __*math*__ on the value
+
+* calc __*(important!!!)*__
+* px, percent, viewHeight, viewWidth, quote
+* important
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+
+## __Important home grown *functions*__
+
+* colorOut
+* borders
+* paddings/margins/fonts
+* buttonStates/setAllLinkColors
+
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+## __Assign your *classes*__
+
+* classes proper to component use `classes`
+* Any shared classes (like buttons), will have an inversed name, eg: `const classesButtons = buttonClasses()`
+* use __*classNames()*__ (https://github.com/JedWatson/classnames)
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+## __Overwrite *Variables*__
+
+![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+
+---
+
+# *Warning!*
+
+Currently you can overwrite more than you __*should*__. We will eventually *white-list* the variables.
+
+![](https://thumbs.gfycat.com/DefenselessNeighboringDartfrog-size_restricted.gif)
+
+---
+
+`themes/yourTheme/assets/varaibles.json`
+
+* *First key* is name used in `variableFactory` (example __*"nextPreviousVars"*__)
+* *Second key* is the "group" name (example __*"colors"*__)
+* *Third+ key* is variable name(s)
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
+
+---
+
+# __*Questions*__?
+
+![](https://giant.gfycat.com/AffectionateMeagerGermanshorthairedpointer.gif)
