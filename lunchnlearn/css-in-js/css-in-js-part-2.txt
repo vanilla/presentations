@@ -15,14 +15,15 @@
 ![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
 
 * File name must be suffixed with __*"Styles.ts"*__
-* May contain one or more function returning __*variables*__
-* Variable functions are suffixed with __*"Variables"*__
-* May container one or more functions returning *classes*
-* Variable functions are suffixed with __*"Classes"*__
+	* May contain one or more function returning __*variables*__
+	* May container one or more functions returning __*classes*__
+* Variable functions are suffixed with __*"Variables"*__      
+* Classes functions are suffixed with __*"Classes"*__
+
 
 ---
 
-Usuaully, you want one component style file for some component (__*myComponent.tsx*__, __*myComponentStyles.ts*__)
+Usuaully, you want __*one*__ component style file and __*one*__ component file (eg. __*myComponent.tsx*__ & __*myComponentStyles.ts*__)
 
 
 If grouping multiple functions together makes sense (*button types*, *utility functions*), you can do so.
@@ -47,9 +48,13 @@ We have some secondary ones like __*formElementsVariables()*__, or __*layoutVari
 
 ---
 
-# __*Example:*__ __Next/Prev__
+# __*Component Variabales*__
 
-![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+Each component __may__ have its own variables, or just use globals directly.
+
+## Let's look at the __*Next/Prev*__ *component* as an example
+
+![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
 
 ---
 
@@ -75,7 +80,7 @@ We have some secondary ones like __*formElementsVariables()*__, or __*layoutVari
 
 ---
 
-* `useThemeCache()` -> Always use for faster rendering
+* `useThemeCache()` *__Always use for faster rendering__*
 * Load any globals
 * `variableFactory` will namespace your variables
 * Create sub categories and declare your variables
@@ -88,17 +93,19 @@ We have some secondary ones like __*formElementsVariables()*__, or __*layoutVari
 
 ## __nextPrevious*Classes*()__
 
-* `useThemeCache()` -> Always use for faster rendering
+![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
+
+---
+
+* `useThemeCache()` *__Always use for faster rendering__*
 * Load your variales. You may or may not need global variables
 * create `style` using `styleFactory` -> our style function, not the one from TypeStyles
-* `root` for the component's root class
 
 ![](https://media.giphy.com/media/McgJ3m3bttwpG/giphy.gif)
 
 ---
 
-## __nextPrevious*Classes*()__
-
+* `root` for the component's root class
 * variable name matches "subcomponentName"
 * add styles (look up TypeStyle documentation)
 * Output classes
@@ -148,7 +155,7 @@ TypeStyle has many helper functions. For values with a unit, it's best to output
 
 ---
 
-## __Overwrite *Variables*__
+## __Overwriting *Variables*__
 
 ![](https://media.giphy.com/media/26FeUjF88goLxusOQ/giphy.gif)
 
