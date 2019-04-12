@@ -66,7 +66,7 @@ Each component __may__ have its own variables, or just use globals directly.
 
 `/vanilla/library/src/scripts/navigation/NextPrevious.tsx`
 
-`/vanilla/library/src/scripts/navigation/nextPreviousStyles.tsx`
+`/vanilla/library/src/scripts/navigation/nextPreviousStyles.ts`
 
 ## __*Unimaginative names for the win!*__
 
