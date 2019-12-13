@@ -80,7 +80,7 @@ Tool we use to catch visual changes
 
 ---
 
-# Chromatic takes screen shots when you make a PR. They need to be approved.
+# Chromatic takes screen shots when you make a PR. They need to be approved by a human.
 
 ![](https://media.giphy.com/media/EA3RHPEx6BlBu/giphy.gif)
 
