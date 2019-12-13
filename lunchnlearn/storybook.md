@@ -97,6 +97,13 @@ https://www.chromaticqa.com/snapshot?appId=5d5eba16c782b600204ba187&id=5de169eae
 
 ---
 
+# Legacy !
+
+When legacy styles break, add them to the legacy page so we can catch any bugs. I did so for legacy quotes and bbcode alignment recently.
+
+![](https://media.giphy.com/media/EA3RHPEx6BlBu/giphy.gif)
+
+---
 
 # Questions?
 
